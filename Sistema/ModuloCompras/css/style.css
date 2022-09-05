@@ -1,0 +1,287 @@
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        /** Resetea para REMS - 62.5% = 10px de 16px **/
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    /** Globales **/
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .contenedor {
+        max-width: 120rem;
+        /* = 1200px */
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 3.4rem;
+    }
+    
+    h4 {
+        font-size: 3.3rem;
+    }
+    /* BOTONES */
+    
+    .btn {
+        color: #ffffff;
+        background-color: limegreen;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        margin: 1.5rem 0 1.5rem 0;
+        display: inline-block;
+        text-align: center;
+        border: none;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    
+    .btnPre {
+        background-color: gold;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border: 0.01rem solid;
+    }
+    
+    .btn:hover {
+        cursor: pointer;
+    }
+    /* VENTANA PRINCIPAL */
+    
+    .contenidoPrincipal {
+        max-width: 92rem;
+        margin: 3rem auto;
+        background-color: white;
+        border: 0.3rem solid #1fda5d;
+        padding: 0rem;
+        box-shadow: 2rem 2rem 2rem rgb(185, 235, 178);
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    
+    .pantalla img {
+        height: 8rem;
+        width: 100%;
+    }
+    /* DISTRIBUCIÓN SILLAS */
+    
+    .panelDos {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .panelIzq {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 30%;
+        padding-left: 5rem;
+    }
+    
+    .panelDer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: calc(60% - 2rem);
+        padding-right: 5rem;
+    }
+    
+    .panelInferior {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        flex-wrap: wrap;
+    }
+    
+    .informacion {
+        display: flex;
+        justify-content: space-between;
+        border-top: 0.2rem solid #1fda5d;
+        border-bottom: 0.2rem solid #1fda5d;
+    }
+    
+    .cajaInfo {
+        border: 0.1rem solid #000000;
+        width: 20rem;
+        text-align: center;
+        margin: 1rem 0;
+        font-family: "Poppins", sans-serif;
+        border-radius: 1rem;
+    }
+    
+    .infoOcupado {
+        margin-left: 4rem;
+        background-color: red;
+    }
+    
+    .infolibrePre {
+        background-color: gold;
+    }
+    
+    .infolibreGen {
+        background-color: limegreen;
+    }
+    
+    .infolibreSeleccion {
+        margin-right: 4rem;
+        background-color: steelblue;
+    }
+    
+    .enviar {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: -1rem;
+    }
+    
+    .enviar a {
+        color: #ffffff;
+        background-color: #999;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        margin: 1rem 0 2rem 0;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2rem;
+    }
+    
+    .enviar a:hover {
+        cursor: pointer;
+    }
+    /* DETALLES DE LA PELICULA */
+    
+    .contenido-Principal {
+        max-width: 110rem;
+        margin: 3rem auto;
+        background-color: white;
+        border: 0.3rem solid #1fda5d;
+        padding: 0rem;
+        box-shadow: 2rem 2rem 2rem rgb(185, 235, 178);
+        padding: 0rem;
+        border-radius: 2rem;
+    }
+    
+    .contenedor {
+        margin: 2rem auto;
+    }
+    
+    .detalles {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .detalles .imagen {
+        padding: 2rem;
+        flex-basis: 25%;
+    }
+    
+    .detalles-pelicula {
+        flex-basis: calc(70% - 1.5rem);
+        text-align: justify;
+        padding: 2rem;
+    }
+    
+    .detalles-pelicula h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 5rem 1rem 5rem;
+        border-bottom: 0.2rem solid #1fda5d;
+    }
+    
+    .detalles-pelicula h5 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    
+    .detalles-pelicula span {
+        font-weight: 100;
+        text-transform: initial;
+    }
+    
+    .elegir {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .elegir table {
+        border-collapse: separate;
+        border-spacing: 1rem;
+    }
+    
+    .elegir select {
+        width: 30rem;
+        height: 3rem;
+        border-radius: 1rem;
+    }
+    
+    .elegir label {
+        font-weight: 800;
+    }
+    /** SELECCION DE MULTIPLEX **/
+    
+    .contenido-multiplex {
+        margin: 3rem 10rem;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        border-bottom: 0.2rem solid #1fda5d;
+    }
+    
+    .seleccionMul .formulario select {
+        display: block;
+        -webkit-appearance: none;
+        border-radius: 2rem;
+        margin-left: 16rem;
+        width: 70%;
+        height: 4rem;
+        margin-bottom: 3rem;
+        padding-left: 2rem;
+    }
+    
+    .seleccionMul .formulario input[type="submit"] {
+        display: flex;
+        text-align: center;
+        margin-left: 40rem;
+        border-radius: 2rem;
+        width: 30rem;
+        height: 4rem;
+        padding: 0 10rem;
+        background-color: limegreen;
+    }
+    
+    .imgMul {
+        display: flex;
+        width: 60rem;
+        height: rem;
+        margin: 9rem 0;
+        text-align: center;
+    }
